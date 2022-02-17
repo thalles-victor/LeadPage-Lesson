@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+
+  background-color: #8C3BFF;
+}
+
+.title {
+  font-size: 50px;
+  color: #731EE8;
+  color: white;
+}
+
+.message {
+  font-size: 30px;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+img {
+  width: 180px;
+  height: 210px;
+  background-color: transpare;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 10px;
+  border-radius: 8px;
+  font-size: 18px;
+
+  border: 1px solid;
+
+  box-shadow: 3px 4px #18151d90;
+
+  background-color: white;
+  transition: background  .10s;
+  transition: color .20s;
+}
+
+.btn:hover {
+  background-color: blue;
+  color: white;
+}

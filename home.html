@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./styles//Home/style.css">
+      <title> Home </title>
+  </head>
+
+  <body>
+    <div class="container">
+      
+        <div class="form">
+          <h1 class="title"> Login </h1>
+
+          <h1 class="label" >Email</h1>
+          <input class="inp" id="email" placeholder="Email">
+
+          <h1 class="label">Senha </h1>
+          <input class="inp" type="password" id="password" placeholder="Senha">
+
+          <button onclick="login()" class="btn-login">Logar</button>
+        </div>
+        
+        
+        
+        <footer>
+          <button class="span">Esqueci a senha</button>
+          <button  class="btn"> Criar conta </button>
+
+          <script>
+            function login(){
+              var email = document.getElementById("email").value;
+              var password = document.getElementById("password").value;
+              if(!email && !password) {
+                alert("Preencha o email e a senha por favor")
+              }
+              else if(!email) {
+                alert("Preencha o email")
+              }
+              else if(!password) {
+                alert("Preencha a senha")
+              }
+              
+              
+              else alert("Seu usuário é: " + email + " e sua senha é: " + password) 
+            }
+            
+          </script>
+        </footer>
+    </div>
+
+  </body>
+</html>
